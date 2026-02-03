@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class Expand : MonoBehaviour
 {
+    
     void OnCollisionEnter2D(Collision2D collision)
     {
         var platform = collision.gameObject.GetComponent<PlatformController>();

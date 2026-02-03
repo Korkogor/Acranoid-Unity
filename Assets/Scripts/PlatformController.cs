@@ -6,15 +6,13 @@ public class PlatformController : MonoBehaviour
     public float speed = 1f;
     private float horizontal;
     private Rigidbody2D rb;
-    public Transform saveScale;
     Vector3 originalScale;
     
     
     void Start()
     {
        rb = GetComponent<Rigidbody2D>();
-       saveScale = GetComponent<Transform>();
-       originalScale = new Vector3(0.7F, 0.7F, 0.7F);
+       originalScale = transform.localScale;
     }
 
     void Update()
