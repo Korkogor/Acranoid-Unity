@@ -51,6 +51,7 @@ public class Ball : MonoBehaviour
             Vector2 reflectDir = Vector2.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
             // collision.contacts[0].normal - это направление поверхности, о которую мы ударились
             rb.linearVelocity = reflectDir * ballSpeed;
+            
         }
     }
 }
